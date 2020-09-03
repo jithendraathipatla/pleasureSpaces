@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SliderImages from "../components/slider"
 import SEO from "../components/seo"
 import MainLogo from "../images/logo.png"
-import PaperComponant from "../components/papercomponent"
 import { FaBuilding, FaLeaf } from "react-icons/fa"
 
 const IndexPage = () => (
@@ -34,42 +33,35 @@ const IndexPage = () => (
       <br />
       <div css={artworks}>
         <div>
-          <PaperComponant>
-            <div css={paperitem}>
-              <div style={{ textAlign: "-webkit-center" }}>
-                <FaLeaf />
-                <br />
-                <h4>Latest Technology</h4>
-              </div>
-
-              <span>
-                Projects we take at PSI are carefully designed and developed by
-                considering the emotional wealth of valuing our delicate
-                relationship with nature and ourselves.And also where one can
-                feel the rhythm of the earth to build their dream home amdist
-                the throbbing heartbeats of flora and fauna.
-              </span>
+          <div css={paperitem}>
+            <div style={{ textAlign: "-webkit-center" }}>
+              <FaLeaf />
+              <br />
+              <h4>Latest Technology</h4>
             </div>
-          </PaperComponant>
+            <span>
+              Projects we take at PSI are carefully designed and developed by
+              considering the emotional wealth of valuing our delicate
+              relationship with nature and ourselves.And also where one can feel
+              the rhythm of the earth to build their dream home amdist the
+              throbbing heartbeats of flora and fauna.
+            </span>
+          </div>
         </div>
         <div>
-          <PaperComponant>
-            <div css={paperitem}>
-              <div style={{ textAlign: "-webkit-center" }}>
-                <FaBuilding />
-                <br />
-                <h4>Buildings</h4>
-              </div>
-
-              <span>
-                Pleasure spaces (India) Pvt Ltd strictly adhere with real estate
-                act 2016 (Regulation and development) and the rules made there
-                under (RERA) which have been brought into effect from 1st may
-                2017. And also where one can feel the rhythm of the earth to
-                build their dream home amdist the throbbing heartbeats.
-              </span>
+          <div css={paperitem}>
+            <div style={{ textAlign: "-webkit-center" }}>
+              <FaBuilding />
+              <br />
+              <h4>Buildings</h4>
             </div>
-          </PaperComponant>
+            <span>
+              Pleasure spaces (India) Pvt Ltd strictly adhere with real estate
+              act 2016 (Regulation & development) and the rules made there
+              under (RERA) which have been brought into effect from 1st may
+              2017. And also where one can feel the rhythm of the earth.
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -81,6 +73,9 @@ export default IndexPage
 const paperitem = css`
   padding: 20px;
   text-align: justify;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  background: #ffff;
   svg {
     display: block;
     font-size: 65px;
