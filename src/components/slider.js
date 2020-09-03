@@ -5,12 +5,13 @@ import "react-awesome-slider/dist/styles.css"
 import FirstSliderImage from "../images/slider1.jpg"
 import SecondSliderImage from "../images/slider3.jpg"
 import ThirdSliderImage from "../images/slider1.jpg"
+import {css} from '@emotion/core'
 
 const AutoplaySlider = withAutoplay(AwesomeSlider)
 
 const Slider = () => {
   return (
-    <div style={{ marginTop: "115px" }}>
+    <div css={main}>
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
@@ -26,3 +27,10 @@ const Slider = () => {
 }
 
 export default Slider
+
+const main = css`
+  padding-top:115px;
+  @media(max-width:600px){
+    padding-top:10px;
+  }
+`

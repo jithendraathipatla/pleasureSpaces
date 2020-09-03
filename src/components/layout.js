@@ -69,6 +69,9 @@ const footerLinks = css`
     :hover{
       text-decoration: underline;
     }
+    @media(max-width:600px){
+      padding-left:20px;
+    }
   }
 `
 

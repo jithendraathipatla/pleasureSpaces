@@ -91,6 +91,9 @@ const artworks = css`
   grid-template-columns: 6fr 6fr;
   grid-gap: 20px;
   margin-left: -10px;
+  @media(max-width:600px){
+    display:block;
+  }
 `
 
 const aboutpart = css`
@@ -101,5 +104,9 @@ const aboutpart = css`
   }
   span {
     text-align: justify;
+  }
+  @media(max-width:600px){
+    padding:10px 20px;
+    text-align: center;
   }
 `
