@@ -93,6 +93,7 @@ const artworks = css`
   margin-left: -10px;
   @media(max-width:600px){
     display:block;
+    margin-left: 0px;
   }
 `
 
@@ -107,6 +108,9 @@ const aboutpart = css`
   }
   @media(max-width:600px){
     padding:10px 20px;
-    text-align: center;
+    text-align: justify;
+    :nth-child(2) div{
+      padding-top:10px;
+    }
   }
 `

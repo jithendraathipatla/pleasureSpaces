@@ -125,7 +125,7 @@ const main = css`
 const mobildonly = css`
 @media(max-width:600px){
   margin-top: -8px !important;
-  padding-left: 50%;
+  margin-left: 50%;
   transform: translate(-32%, 0%);
 }
 `

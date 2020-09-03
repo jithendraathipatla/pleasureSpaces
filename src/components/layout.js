@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           <Link to="/projects">
             Projects
           </Link>
-          <Link to="/contact">
+          <Link to="/contac">
             Contact
           </Link>
          </div>

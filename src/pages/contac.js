@@ -89,6 +89,9 @@ const paper = css`
 const contact = css`
   display: grid;
   grid-template-columns: 7fr 3fr;
+  @media(max-width:600px){
+    display: block;
+  }
 `
 const one = css`
   img {
