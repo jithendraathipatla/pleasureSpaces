@@ -8,6 +8,7 @@
     {
       "slug": "ladies-tee",
       "title": "Ladies' Tee",
-      "price": "$12"
+      "price": "$12",
+      "image": "./images/psi-oliver.jpg"
     }
 ]
