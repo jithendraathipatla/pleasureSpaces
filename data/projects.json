@@ -2,7 +2,8 @@
     {
       "slug": "psi-oliver",
       "title": "Men's Tee",
-      "price": "$15"
+      "price": "$15",
+      "image": "./images/psi-oliver.PNG"
     },
     {
       "slug": "ladies-tee",
