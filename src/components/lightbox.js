@@ -10,13 +10,9 @@ const Lighthouse = props => {
   const displayingGallery = () => {
     return state.map((item, i) => {
       return (
-        <div
-          key={i}
-          onClick={() => setisOpen(true)}
-          css={cards}
-        >
+        <div key={i} onClick={() => setisOpen(true)} css={cards}>
           <Image fluid={item.image} alt={item.name} />
-          <span>{item.name}</span>
+          <h4>{item.name}</h4>
         </div>
       )
     })
@@ -49,13 +45,26 @@ export default Lighthouse
 const imagesingrid = css`
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
-  grid-gap: 40px 20px;
-  div{
-    height:230px;
+  grid-gap: 65px 20px;
+  div {
+    height: 230px;
+    :hover {
+      cursor: pointer;
+      transform: translateY(-1px);
+      border: 1px solid #eee;
+      box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2)
+    }
   }
 `
 
 const cards = css`
-
  border: 1px solid #eeee;
+ h4{
+     text-align: center;
+     border: 1px solid #eee;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    background:rgb(240,245,247);
+ }
 `

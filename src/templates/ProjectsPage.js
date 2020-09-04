@@ -192,6 +192,7 @@ const ProjectsPage = ({ data }) => {
         </div>
         <br />
         <br />
+        <br />
         <hr />
         <div>
           <Titlecomponant title={`${Projects.title} Master Plan`} />
@@ -265,7 +266,7 @@ const main = css`
     animation: fadeInUp 300ms linear 300ms both;
     color: #fff;
     text-shadow: 0 3px 0 #000;
-    background: #ff00ffc7;
+    background:#252425c7;
     padding: 20px 50px;
     border-radius: 15px;
   }
