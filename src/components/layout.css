@@ -12,6 +12,13 @@ html {
   color: orange !important;
 }
 
+.awssld__bullets button {
+  background: #46d87a !important;
+}
+.awssld__bullets .awssld__bullets--active{
+  background: #46d87a !important;
+}
+
 .awssld__bullets {
   bottom: 10px !important;
   z-index: 20 !important;

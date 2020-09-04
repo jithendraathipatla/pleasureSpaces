@@ -83,7 +83,7 @@ const paperitem = css`
     display: block;
     font-size: 65px;
     padding: 10px;
-    color: #00c4ff;
+    color: #f29700;
     border-radius: 28%;
     box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
   }

@@ -1,14 +1,15 @@
 [
-    {
-      "slug": "psi-oliver",
-      "title": "Men's Tee",
-      "price": "$15",
-      "image": "./images/psi-oliver.jpg"
-    },
-    {
-      "slug": "ladies-tee",
-      "title": "Ladies' Tee",
-      "price": "$12",
-      "image": "./images/psi-oliver.jpg"
-    }
+  {
+    "slug": "psi-oliver",
+    "title": "PSI Oliver",
+    "price": "$15",
+    "image": "./images/psi-oliver.jpg",
+    "description": "An address to reckon with at Belathur Main Road, Seegehalli, just off Old Madras Road and with a strong foundation of trust, this is a well researched project. The team behind the scenes is a very talented and well experienced one. The benchmark given to the team was to ensure that you open doors to a new and evolved lifestyle and set standards to reckon with, in the vicinity. Every detail has been finalised by the top management after a meticulous thought process and keeping in mind the obligation and responsibility of the company towards its customers. With amenities that meet international standards and a price tag which is friendly on your wallet, Hilife Horizon is all set to surpass all conventional norms of residential apartments."
+  },
+  {
+    "slug": "ladies-tee",
+    "title": "Ladies' Tee",
+    "price": "$12",
+    "image": "./images/psi-oliver.jpg"
+  }
 ]
