@@ -7,9 +7,9 @@ html {
 }
 
 .active {
-  border-bottom: 2px solid #15415b;
+  border-bottom: 2px solid orange;
   padding-bottom: 20px;
-  color: #15415b;
+  color: orange !important;
 }
 
 .awssld__bullets {

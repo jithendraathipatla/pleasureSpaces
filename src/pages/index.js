@@ -6,6 +6,7 @@ import SliderImages from "../components/slider"
 import SEO from "../components/seo"
 import MainLogo from "../images/logo.png"
 import { FaBuilding, FaLeaf } from "react-icons/fa"
+import OurProjectsComponant from '../components/ourprojects'
 
 const IndexPage = () => (
   <Layout>
@@ -65,6 +66,8 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <br/>
+    <OurProjectsComponant/>
   </Layout>
 )
 
