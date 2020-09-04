@@ -1,5 +1,4 @@
 import React from "react"
-
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
 import SliderImages from "../components/slider"
@@ -16,21 +15,23 @@ const IndexPage = () => (
       <div style={{ textAlign: "center" }}>
         <img src={MainLogo} alt="Pleasure Spaces" />
       </div>
-      <span>
-        The story of pleasure spaces (India) Pvt Ltd has its genesis as a
-        partnership firm of 3individuals in the year 2016. With the short period
-        of time PSI gained the trust of the Investors and became synonymous with
-        some of the most inspiring & innovating real estate spaces in prominent
-        residential and commercial real estate developments.
-        <br />
-        <br />
-        PSI is more than a real estate development enterprise. It's an idea that
-        rests on Innovation,providing the best and creating benchmarks. As
-        individuals and as an organisation PSI adheres to Quality, integrity,
-        transparency and honesty in each finer aspects to strive for excellence
-        and remain committed to ethics in selling.
-      </span>
-      <br />
+      <div style={{ textAlign: "justify" }}>
+        <span>
+          The story of pleasure spaces (India) Pvt Ltd has its genesis as a
+          partnership firm of 3individuals in the year 2016. With the short
+          period of time PSI gained the trust of the Investors and became
+          synonymous with some of the most inspiring & innovating real estate
+          spaces in prominent residential and commercial real estate
+          developments.
+          <br />
+          <br />
+          PSI is more than a real estate development enterprise. It's an idea
+          that rests on Innovation,providing the best and creating benchmarks.
+          As individuals and as an organisation PSI adheres to Quality,
+          integrity, transparency and honesty in each finer aspects to strive
+          for excellence and remain committed to ethics in selling.
+        </span>
+      </div>
       <br />
       <br />
       <div css={artworks}>

@@ -6,6 +6,32 @@ html {
   overflow-y: scroll;
 }
 
+.form-group {
+  padding: 0px 15px;
+}
+
+
+.form-head {
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+}
+
+
+.form-button{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-head h1 {
+  font-size: 18px;
+  text-align: center;
+  background-color: orange;
+  padding: 10px 0px;
+  color: #fff;
+}
+
 .active {
   border-bottom: 2px solid orange;
   padding-bottom: 20px;
@@ -15,7 +41,7 @@ html {
 .awssld__bullets button {
   background: #46d87a !important;
 }
-.awssld__bullets .awssld__bullets--active{
+.awssld__bullets .awssld__bullets--active {
   background: #46d87a !important;
 }
 

@@ -21,7 +21,7 @@ const OurProjects = () => {
     <div css={main}>
       <TitleComponant title="Our Projects" />
       <span>
-        Hilife Ventures Pvt.Ltd. is one of the leading builders of residential
+        PSI Ventures Pvt.Ltd. is one of the leading builders of residential
         apartments in Bangalore Company lays strong emphasis on environment
         management, water harvesting and high safety standards.
       </span>
