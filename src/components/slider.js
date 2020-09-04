@@ -2,7 +2,7 @@ import React from "react"
 import AwesomeSlider from "react-awesome-slider"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import "react-awesome-slider/dist/styles.css"
-import FirstSliderImage from "../images/slider1.png"
+import FirstSliderImage from "../images/slider1.PNG"
 import SecondSliderImage from "../images/slider3.jpg"
 import ThirdSliderImage from "../images/slider1.jpg"
 import {css} from '@emotion/core'
