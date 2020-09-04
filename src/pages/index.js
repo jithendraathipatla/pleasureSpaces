@@ -6,7 +6,7 @@ import SliderImages from "../components/slider"
 import SEO from "../components/seo"
 import MainLogo from "../images/logo.png"
 import { FaBuilding, FaLeaf } from "react-icons/fa"
-import OurProjectsComponant from '../components/ourprojects'
+import OurProjectsComponant from "../components/ourprojects"
 
 const IndexPage = () => (
   <Layout>
@@ -30,6 +30,7 @@ const IndexPage = () => (
         transparency and honesty in each finer aspects to strive for excellence
         and remain committed to ethics in selling.
       </span>
+      <br />
       <br />
       <br />
       <div css={artworks}>
@@ -58,16 +59,18 @@ const IndexPage = () => (
             </div>
             <span>
               Pleasure spaces (India) Pvt Ltd strictly adhere with real estate
-              act 2016 (Regulation & development) and the rules made there
-              under (RERA) which have been brought into effect from 1st may
-              2017. And also where one can feel the rhythm of the earth.
+              act 2016 (Regulation & development) and the rules made there under
+              (RERA) which have been brought into effect from 1st may 2017. And
+              also where one can feel the rhythm of the earth to build their
+              dream home amdist the throbbing heartbeats.
             </span>
           </div>
         </div>
+        <br />
       </div>
     </div>
-    <br/>
-    <OurProjectsComponant/>
+    <br />
+    <OurProjectsComponant />
   </Layout>
 )
 
@@ -94,8 +97,8 @@ const artworks = css`
   grid-template-columns: 6fr 6fr;
   grid-gap: 20px;
   margin-left: -10px;
-  @media(max-width:600px){
-    display:block;
+  @media (max-width: 600px) {
+    display: block;
     margin-left: 0px;
   }
 `
@@ -108,12 +111,15 @@ const aboutpart = css`
   }
   span {
     text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
   }
-  @media(max-width:600px){
-    padding:10px 20px;
+  @media (max-width: 600px) {
+    padding: 10px 20px;
     text-align: justify;
-    :nth-child(2) div{
-      padding-top:10px;
+    :nth-child(2) div {
+      padding-top: 10px;
     }
   }
 `

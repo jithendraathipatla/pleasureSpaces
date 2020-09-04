@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
       <div css={links}>
         <div css={social}>
           <div>
-            <a style={{ fontSize: "12px" }}>9999999999</a>
+            <a style={{ fontSize: "12px", letterSpacing: "0.8px"}}>9999999999</a>
           </div>
           <div>
             <FaFacebook />

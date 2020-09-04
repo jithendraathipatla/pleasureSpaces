@@ -80,4 +80,9 @@ const ourproject = css`
 const main = css`
   text-align: center;
   padding: 0px 130px;
+  span{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 `

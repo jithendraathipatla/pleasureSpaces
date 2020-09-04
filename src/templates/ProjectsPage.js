@@ -222,6 +222,9 @@ const header = css`
   }
   span {
     letter-spacing: 0.5;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
   }
 `
 
@@ -239,6 +242,8 @@ const fewcards = css`
    h4{
      padding-left:30px;
      padding-top:20px;
+     letter-spacing:0.3px;
+     text-shadow: 0 0px 1px #000;
    }
    svg{
     display: block;
@@ -269,6 +274,7 @@ const main = css`
     background:#252425c7;
     padding: 20px 50px;
     border-radius: 15px;
+    letter-spacing:0.9px;
   }
   span {
     font-size: 20px;
