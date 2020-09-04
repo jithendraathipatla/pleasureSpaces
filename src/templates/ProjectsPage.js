@@ -1,12 +1,20 @@
-import React,{useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
 import { css } from "@emotion/core"
 import { FaCheckCircle, FaLeaf, FaBoxes } from "react-icons/fa"
 import LightBoxComponant from "../components/lightbox"
-import PSIOliverImage from '../../data/images/psi-oliver.jpg'
-import Titlecomponant from '../components/title'
+import PSIOliverImage from "../../data/images/psi-oliver.jpg"
+import PSIOliverImage1 from "../../data/images/archwayfuturewall.jpg"
+import PSIOliverImage2 from "../../data/images/clubhouse.jpg"
+import PSIOliverImage3 from "../../data/images/clubhouseandpark.jpg"
+import PSIOliverImage4 from "../../data/images/clubhousefirstfloor.jpg"
+import PSIOliverImage5 from "../../data/images/clubhousepool.jpg"
+import PSIOliverImage6 from "../../data/images/clubhousesecondfloor.jpg"
+import PSIOliverImage7 from "../../data/images/compoundwall.jpg"
+import PSIOliverImage8 from "../../data/images/grocerystore.jpg"
+import Titlecomponant from "../components/title"
 
 export const query = graphql`
   query($slug: String!) {
@@ -14,6 +22,72 @@ export const query = graphql`
       title
       description
       image {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      masterplanImage {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      galleryOne {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+
+      gallerytwo {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+
+      gallerythree {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      galleryfour {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      galleryfive {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+
+      gallerysix {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      galleryseven {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      galleryeight {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -29,24 +103,51 @@ const ProjectsPage = ({ data }) => {
   const [imagestate, setimagestate] = useState([])
   const [state, setstate] = useState([
     {
-      name:"1224 SqFt",
+      name: "Entrance",
       image: Projects.image.childImageSharp.fluid,
-      },
-      {
-       name:"1277 SqFt",
-       image: Projects.image.childImageSharp.fluid
-      },
+    },
+    {
+      name: "Arch Way",
+      image: Projects.galleryOne.childImageSharp.fluid,
+    },
+    {
+      name: "Club House",
+      image: Projects.gallerytwo.childImageSharp.fluid,
+    },
+    {
+      name: "Club House and Park",
+      image: Projects.gallerythree.childImageSharp.fluid,
+    },
+    {
+      name: "Club House First Floor",
+      image: Projects.galleryfour.childImageSharp.fluid,
+    },
+    {
+      name: "Clubhouse Pool",
+      image: Projects.galleryfive.childImageSharp.fluid,
+    },
+    {
+      name: "Club House Second Floor",
+      image: Projects.gallerysix.childImageSharp.fluid,
+    },
+    {
+      name: "Compound Wall",
+      image: Projects.galleryseven.childImageSharp.fluid,
+    },
+    {
+      name: "Grocery Store",
+      image: Projects.galleryeight.childImageSharp.fluid,
+    },
   ])
-  useEffect(()=>{
+  useEffect(() => {
     switch (Projects.title) {
       case "PSI Oliver":
-        setimagestate([PSIOliverImage,PSIOliverImage]);
-        break;
+        setimagestate([PSIOliverImage, PSIOliverImage1, PSIOliverImage2, PSIOliverImage3,PSIOliverImage4, PSIOliverImage5, PSIOliverImage6, PSIOliverImage7, PSIOliverImage8])
+        break
       default:
-        break;
+        break
     }
-  },[])
-
+  }, [])
 
   return (
     <Layout>
@@ -64,7 +165,7 @@ const ProjectsPage = ({ data }) => {
       <br />
       <div css={aftermain}>
         <div css={header}>
-          <Titlecomponant title={`Highlights of ${Projects.title}`}/>
+          <Titlecomponant title={`Highlights of ${Projects.title}`} />
           <span>{Projects.description}</span>
         </div>
         <br />
@@ -84,11 +185,22 @@ const ProjectsPage = ({ data }) => {
         </div>
         <br />
         <br />
-        <hr/>
+        <hr />
         <div css={gallerypart}>
-          <Titlecomponant title={`${Projects.title} Gallery`}/>
-          <LightBoxComponant images={imagestate} state={state}/>
+          <Titlecomponant title={`${Projects.title} Gallery`} />
+          <LightBoxComponant images={imagestate} state={state} />
         </div>
+        <br />
+        <br />
+        <hr />
+        <div>
+          <Titlecomponant title={`${Projects.title} Master Plan`} />
+          <Image
+            fluid={Projects.masterplanImage.childImageSharp.fluid}
+            alt={Projects.title}
+          />
+        </div>
+        <hr />
       </div>
     </Layout>
   )
@@ -97,7 +209,7 @@ const ProjectsPage = ({ data }) => {
 export default ProjectsPage
 
 const gallerypart = css`
-  h2{
+  h2 {
     text-align: center;
   }
 `

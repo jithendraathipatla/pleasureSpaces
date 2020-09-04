@@ -13,6 +13,7 @@ const Lighthouse = props => {
         <div
           key={i}
           onClick={() => setisOpen(true)}
+          css={cards}
         >
           <Image fluid={item.image} alt={item.name} />
           <span>{item.name}</span>
@@ -48,12 +49,13 @@ export default Lighthouse
 const imagesingrid = css`
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
-  grid-gap: 20px;
-  div {
-    height: 250px;
-    border: 1px solid #eee;
-    :hover {
-      cursor: pointer;
-    }
+  grid-gap: 40px 20px;
+  div{
+    height:230px;
   }
+`
+
+const cards = css`
+
+ border: 1px solid #eeee;
 `
